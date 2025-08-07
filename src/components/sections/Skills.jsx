@@ -1,45 +1,11 @@
 "use client"
 import React, { useState, useEffect, useRef } from 'react';
-import {  Layers, Server, MonitorCheck, Code2 } from 'lucide-react';
+import { skills } from '@/constant';
 
 export default function SkillsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
 
- const skills = [
-    {
-      id: 1,
-      title: "Frontend Development",
-      percentage: 95,
-      description: "Building dynamic and interactive user interfaces using React.js, including component-based architecture, state management, hooks, and modern React patterns for scalable web applications.",
-      icon: Code2,
-      color: "from-blue-400 to-cyan-400",
-    },
-    {
-      id: 2,
-      title: "Backend Development", 
-      percentage: 92,
-      description: "Proficient in modern JavaScript (ES6+), including async/await, destructuring, modules, and functional programming concepts for both frontend and backend development.",
-      icon: MonitorCheck,
-      color: "from-yellow-400 to-orange-400",
-    },
-    {
-      id: 3,
-      title: "Full Stack Development",
-      percentage: 88,
-      description: "Backend development using Node.js runtime and Express.js framework to build RESTful APIs, handle server-side logic, middleware implementation, and database integration.",
-      icon: Server,
-      color: "from-green-400 to-emerald-400",
-    },
-    {
-      id: 4,
-      title: "Database Management",
-      percentage: 89,
-      description: "End-to-end web application development combining frontend and backend technologies, database design, API development, and deployment strategies.",
-      icon: Layers,
-      color: "from-indigo-400 to-purple-400",
-    },
-  ];
 
 
   // Intersection Observer for animations
@@ -80,8 +46,8 @@ export default function SkillsSection() {
   };
 
   return (
-    <div ref={sectionRef} className=" bg-black py-16 px-4">
-      <div className="container mx-auto">
+    <div ref={sectionRef} className=" bg-black py-16 px-4" name="skills">
+      <div className="container mx-auto w-full">
         {/* Section Header */}
         <div className="mb-16 text-center">
           <h2 className="text-white text-4xl md:text-6xl font-bold mb-4">

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 export default function Navbar() {
@@ -6,6 +6,15 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const scrollToSection = (sectionName) => {
+    const element = document.querySelector(`[name="${sectionName}"]`);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -18,16 +27,52 @@ export default function Navbar() {
       {/* Desktop Navigation - Hidden on mobile and tablet */}
       <ul className="hidden lg:flex space-x-8 text-sm">
         <li>
-          <a href="#home" className="text-white hover:text-purple-300 transition">Home</a>
+          <a
+            href="#home"
+            className="text-white hover:text-purple-300 transition"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("home");
+            }}
+          >
+            Home
+          </a>
         </li>
         <li>
-          <a href="#portfolio" className="text-white hover:text-purple-300 transition">Portfolio</a>
+          <a
+            href="#portfolio"
+            className="text-white hover:text-purple-300 transition"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("portfolio");
+            }}
+          >
+            Portfolio
+          </a>
         </li>
         <li>
-          <a href="#skills" className="text-white hover:text-purple-300 transition">Skills</a>
+          <a
+            href="#skills"
+            className="text-white hover:text-purple-300 transition"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("skills");
+            }}
+          >
+            Skills
+          </a>
         </li>
         <li>
-          <a href="#about" className="text-white hover:text-purple-300 transition">About Me</a>
+          <a
+            href="#about"
+            className="text-white hover:text-purple-300 transition"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("aboutMe");
+            }}
+          >
+            About Me
+          </a>
         </li>
       </ul>
 
@@ -35,6 +80,10 @@ export default function Navbar() {
       <a
         href="#contact"
         className="hidden lg:block bg-purple-500 hover:bg-purple-600 rounded py-2 px-5 text-white text-sm transition"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollToSection("contact");
+        }}
       >
         Contact Me
       </a>
@@ -77,7 +126,11 @@ export default function Navbar() {
               <a
                 href="#home"
                 className="block px-8 py-3 text-white hover:text-purple-300 hover:bg-gray-900 transition"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("home");
+                  setIsMenuOpen(false);
+                }}
               >
                 Home
               </a>
@@ -86,7 +139,11 @@ export default function Navbar() {
               <a
                 href="#portfolio"
                 className="block px-8 py-3 text-white hover:text-purple-300 hover:bg-gray-900 transition"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("portfolio");
+                  setIsMenuOpen(false);
+                }}
               >
                 Portfolio
               </a>
@@ -95,7 +152,11 @@ export default function Navbar() {
               <a
                 href="#skills"
                 className="block px-8 py-3 text-white hover:text-purple-300 hover:bg-gray-900 transition"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("skills");
+                  setIsMenuOpen(false);
+                }}
               >
                 Skills
               </a>
@@ -104,7 +165,11 @@ export default function Navbar() {
               <a
                 href="#about"
                 className="block px-8 py-3 text-white hover:text-purple-300 hover:bg-gray-900 transition"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("aboutMe");
+                  setIsMenuOpen(false);
+                }}
               >
                 About Me
               </a>
@@ -113,7 +178,11 @@ export default function Navbar() {
               <a
                 href="#contact"
                 className="block bg-purple-500 hover:bg-purple-600 rounded py-2 px-5 text-white text-sm transition text-center"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("contact");
+                  setIsMenuOpen(false);
+                }}
               >
                 Contact Me
               </a>

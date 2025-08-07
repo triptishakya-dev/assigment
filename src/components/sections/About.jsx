@@ -2,11 +2,11 @@ import React from "react";
 
 const AboutMe = ({
   name = "Tripti Shakya",
-  testimonial = "I'm Tripti Shakya, a passionate full-stack developer with expertise in React.js, Next.js, Node.js, and MongoDB. I build scalable web applications including e-commerce platforms, chat apps, and donation websites. With a legal background and strong technical skills, I contribute to open-source projects and actively engage in tech communities.",
+testimonial = "I'm Tripti Shakya, a passionate full-stack developer with expertise in React.js, Next.js, Node.js, and MongoDB. I build scalable web applications including e-commerce platforms, chat apps, and donation websites. With a legal background and strong technical skills, I'm committed to creating user-centric solutions that make a meaningful impact.",
   showShield = true,
 }) => {
   return (
-    <div className="w-full mx-auto">
+    <div className="w-full mx-auto" name="aboutMe">
       <div className="relative bg-gradient-to-r from-orange-400 via-red-500 to-purple-400 py-8 sm:py-12 md:py-16 text-white text-center shadow-lg flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
         {/* Name */}
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
