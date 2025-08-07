@@ -11,15 +11,15 @@ import {
 export default function HeroSection() {
   return (
     <div className="min-h-[70vh] bg-black flex items-center justify-center px-4">
-      <div className="container flex flex-col md:flex-row w-full  p-8 rounded-lg">
+      <div className="container flex flex-col md:flex-row w-full p-8 rounded-lg">
         {/* Left: Text Content */}
-        <div className="md:w-1/2 flex flex-col justify-center h-full">
+        <div className="w-full [@media(min-width:1024px)]:w-1/2 flex flex-col justify-center h-full">
           <h1 className="text-white text-6xl md:text-8xl font-extrabold leading-tight mb-4">
             WEBSITE
             <br />
             DEVELOPER
           </h1>
-          <h2 className="font-extrabold text-4xl md:text-6xl mt-2 bg-gradient-to-r from-pink-400 via-orange-400 to-yellow-400 bg-clip-text text-transparent mb-8">
+          <h2 className="font-extrabold text-5xl md:text-6xl mt-2 bg-gradient-to-r from-pink-400 via-orange-400 to-yellow-400 bg-clip-text text-transparent mb-8">
           TRIPTI SHAKYA
           </h2>
 
@@ -85,7 +85,7 @@ export default function HeroSection() {
         </div>
 
         {/* Right: Designer Workspace Image */}
-        <div className="md:w-1/2 flex justify-center items-center mt-8 md:mt-0 h-full">
+        <div className="hidden [@media(min-width:1024px)]:flex">
           <div className="relative">
             <img
               src="/image/hero.png"

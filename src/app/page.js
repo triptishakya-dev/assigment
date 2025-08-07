@@ -1,6 +1,6 @@
 import AboutMe from '@/components/sections/About'
-import Hero from '@/components/sections/HeroSection'
-import PortfolioEnhanced from '@/components/sections/Portfolio'
+import HeroSection from '@/components/sections/HeroSection'
+import Portfolio from '@/components/sections/Portfolio'
 import SkillsSection from '@/components/sections/Skills'
 import PortfolioStats from '@/components/sections/StatsSection'
 import React from 'react'
@@ -8,9 +8,9 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <Hero/>
+      <HeroSection/>
       <PortfolioStats/>
-      <PortfolioEnhanced/>
+      <Portfolio/>
       <SkillsSection/>
       <AboutMe/>
     </div>

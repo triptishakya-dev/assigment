@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="relative mb-8">
           <div className=" container mx-auto bg-gradient-to-br from-purple-400 via-purple-500 to-purple-600 rounded-3xl p-6 sm:p-8 lg:p-12 shadow-2xl  relative">
             {/* Decorative background elements */}
-            <div className="w-44 h-32  lg:h-52 bg-white rounded-xl overflow-hidden absolute top-[-50px] shadow-xl transform group-hover:scale-105 transition-transform duration-300">
+            <div className="w-44 h-52  lg:h-52 bg-white rounded-xl overflow-hidden absolute top-[-50px] shadow-xl transform group-hover:scale-105 transition-transform duration-300">
                     <img 
                       src="/image/footer.png" 
                       alt="Modern workspace with laptop showing design work"
@@ -29,7 +29,7 @@ const Footer = () => {
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-white mb-3 lg:mb-4">
                   Thanks for visit my website
                 </h2>
-                <p className="text-sm sm:text-base lg:text-lg text-white/90 leading-relaxed max-w-2xl">
+                <p className="text-base lg:text-lg text-white/90 leading-relaxed max-w-2xl">
                   If you have any questions you can write me to any of my social networks, I am sure I will answer you.
                 </p>
               </div>
