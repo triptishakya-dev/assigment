@@ -5,8 +5,8 @@ export default function Navbar() {
     <nav className="flex items-center justify-between px-8 py-4 bg-black">
       <div className="flex items-center space-x-2">
         {/* Logo */}
-        <img src="/logo.svg" alt="Web logo" className="h-7 w-7" />
-        <span className="text-white font-semibold text-lg tracking-wide">Web</span>
+    
+          <img src="/image/footer2.png" alt="not found" className="h-7" />
       </div>
       <ul className="flex space-x-8 text-sm">
         <li>
